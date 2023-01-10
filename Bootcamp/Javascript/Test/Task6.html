@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      var input1 = prompt('Enter anything you want');
+      var word = prompt('Enter the word you want to search');
+
+      let text = input1.indexOf(word);
+      //   console.log('new Array', bs.join(''));
+
+      let lastThreeCharacter = word.substr(word.length - 3);
+
+      document.getElementById('demo').innerHTML = 'Index of data is ' + text;
+      document.getElementById('demo1').innerHTML =
+        'Last 3 data is ' + lastThreeCharacter;
+    </script>
+  </body>
+</html>

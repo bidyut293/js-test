@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <!-- <p id="dem"></p> -->
+
+    <script>
+      let password = prompt('Enter the Password');
+      // const numbers = [4, 9, 16, 25, 29];
+      // let first = numbers.find(myFunction);
+
+      let regexp =
+        /^([A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,14}$/;
+
+      if (password.match(regexp)) {
+        document.getElementById('demo').innerHTML = 'Password is' + password;
+      } else {
+        document.getElementById('demo').innerHTML =
+          'Password not Proper... Password must Uppercase first letter rest of are must be Capital , small, number or special characters' +
+          password;
+      }
+
+      //   if (password.length >= 6 && password.length <= 14) {
+      //   } else {
+      //     document.getElementById('demo').innerHTML =
+      //       'Password length is' +
+      //       ' ' +
+      //       password.length +
+      //       ' ' +
+      //       'Please Enter Password, length is more than 6 and max length is 14 characters';
+      //   }
+    </script>
+  </body>
+</html>

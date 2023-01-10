@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div style="display: flex" id="divMainForm">
+      <div>
+        <h2>User Form</h2>
+
+        <!-- <form action="/action_page.php"> -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="mname">Middle name:</label>
+        <input type="text" id="mname" name="mname" /><br /><br />
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="mobile">Mobile:</label>
+        <input type="number" id="mobile" name="mobile" /><br /><br />
+
+        <label for="date">Birth date:</label>
+        <input type="date" id="date" name="date" /><br /><br />
+
+        <div style="display: flex; flex-direction: row">
+          <h4>Address :</h4>
+          <div
+            style="
+              border: 1px solid black;
+              padding: 10px;
+              margin-left: 10px;
+              margin-bottom: 10px;
+            "
+          >
+            <label for="l1">Line 1:</label>
+            <input type="text" id="l1" name="l1" /><br /><br />
+
+            <label for="l2">Line 2:</label>
+            <input type="text" id="l2" name="l2" /><br /><br />
+
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" /><br /><br />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" /><br /><br />
+
+            <label for="code">Pin Code:</label>
+            <input type="number" id="code" name="code" /><br /><br />
+          </div>
+        </div>
+
+        <label for="enroll">Enrollment Number:</label>
+        <input type="number" id="enroll" name="enroll" /><br /><br />
+        <input type="submit" onclick="handleClick('OK')" value="Submit" />
+      </div>
+
+      <div id="test1"></div>
+      <!-- </form> -->
+    </div>
+
+    <!-- //Edit Form  -->
+
+    <div style="display: none" id="divEditForm">
+      <h2>Edit Form</h2>
+
+      <!-- <form action="/action_page.php"> -->
+      <label for="fname">First name:</label>
+      <input type="text" id="fname1" name="fname" /><br /><br />
+      <label for="mname">Middle name:</label>
+      <input type="text" id="mname1" name="mname" /><br /><br />
+
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname1" name="lname" /><br /><br />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email1" name="email" /><br /><br />
+
+      <label for="mobile">Mobile:</label>
+      <input type="number" id="mobile1" name="mobile" /><br /><br />
+
+      <label for="date">Birth date:</label>
+      <input type="date" id="date1" name="date" /><br /><br />
+
+      <div style="display: flex; flex-direction: row">
+        <h4>Address :</h4>
+        <div
+          style="
+            border: 1px solid black;
+            padding: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+          "
+        >
+          <label for="l1">Line 1:</label>
+          <input type="text" id="l11" name="l1" /><br /><br />
+
+          <label for="l2">Line 2:</label>
+          <input type="text" id="l21" name="l2" /><br /><br />
+
+          <label for="area">Area:</label>
+          <input type="text" id="area1" name="area" /><br /><br />
+
+          <label for="city">City:</label>
+          <input type="text" id="city1" name="city" /><br /><br />
+
+          <label for="code">Pin Code:</label>
+          <input type="number" id="code1" name="code" /><br /><br />
+        </div>
+      </div>
+
+      <label for="enroll">Enrollment Number:</label>
+      <input type="number" id="enroll1" name="enroll" /><br /><br />
+      <input
+        type="submit"
+        onclick="handleClickEditForm(),handleClick()"
+        value="Submit here"
+      />
+    </div>
+    <script>
+      let bs = [];
+      let i = 0;
+      const handleClick = (ok) => {
+        console.log('data', ok);
+
+        if (ok) {
+          let fname = document.getElementById('fname').value;
+          let mname = document.getElementById('mname').value;
+          let lname = document.getElementById('lname').value;
+
+          let email = document.getElementById('email').value;
+          let mobile = document.getElementById('mobile').value;
+          let Birth = document.getElementById('date').value;
+
+          let l1 = document.getElementById('l1').value;
+          let l2 = document.getElementById('l2').value;
+          let area = document.getElementById('area').value;
+          let city = document.getElementById('city').value;
+          let pin = document.getElementById('code').value;
+
+          let enrollNum = document.getElementById('enroll').value;
+
+          // let bs = [];
+
+          if (fname == '') {
+            alert('Fill out First Name');
+          } else if (mname == '') {
+            alert('Fill out Middle Name');
+          } else if (lname == '') {
+            alert('Fill Last out  Name');
+          } else if (email == '') {
+            alert('Enter Your Email');
+          } else if (mobile == '') {
+            alert('Fill out Mobile Number');
+          } else if (Birth == '') {
+            alert('Fill out Birth date');
+          } else if (l1 == '') {
+            alert('Fill out Line1 of Address');
+          } else if (l2 == '') {
+            alert('Fill out Line2 of Address');
+          } else if (area == '') {
+            alert('Fill out Area');
+          } else if (city == '') {
+            alert('Fill out City');
+          } else if (pin == '') {
+            alert('Fill out Pin');
+          } else if (enrollNum == '') {
+            alert('Fill the Enrollment Number');
+          } else {
+            bs.push({
+              id: i,
+              firstName: fname,
+              middleName: mname,
+              lastName: lname,
+              Email: email,
+              contact: mobile,
+              DOB: Birth,
+              Address: {
+                Line1: l1,
+                Line2: l2,
+                Area: area,
+                City: city,
+                Pin: pin,
+              },
+              Enrollment: enrollNum,
+            });
+
+            i++;
+          }
+        }
+
+        if (bs.length > 0) {
+          document.getElementById('fname').value = '';
+          document.getElementById('mname').value = '';
+          document.getElementById('lname').value = '';
+
+          document.getElementById('email').value = '';
+          document.getElementById('mobile').value = '';
+          document.getElementById('date').value = '';
+
+          document.getElementById('l1').value = '';
+          document.getElementById('l2').value = '';
+          document.getElementById('area').value = '';
+          document.getElementById('city').value = '';
+          document.getElementById('code').value = '';
+
+          document.getElementById('enroll').value = '';
+
+          document.getElementById('test1').innerHTML = bs
+            .map(
+              (user, id) =>
+                `<div id="divq" style="border: 1px solid black; padding: 15px; margin: 15px">
+      <div>Name: ${user.firstName} ${user.middleName} ${user.lastName}</div>
+      <div>Email: ${user.Email}</div>
+      <div>Contact Number: ${user.contact}</div>
+      <div>Date Of Birth: ${user.DOB}</div>
+      <div>Address Line 1: ${user.Address.Line1}</div>
+      <div>Line 2: ${user.Address.Line2}</div>
+      <div>Area: ${user.Address.Area}</div>
+      <div>City: ${user.Address.City}</div>
+      <div>Pin Code: ${user.Address.Pin}</div>
+      <div>Enrollment Number: ${user.Enrollment}</div>
+      <div onClick="handleEdit(${id})" ><button>Edit</button></div>
+      <div onClick="handleDelete(${id}),handleClick()"><button>Delete</button></div>
+    </div>`
+            )
+            .join('');
+        } else {
+          document.getElementById('divq').style.display = 'none';
+        }
+        console.log('fname', bs);
+      };
+
+      const handleEdit = (
+        // e,
+        id
+        // city
+        // fName,
+        // mName,
+        // lName,
+        // email,
+        // contact,
+        // dob,
+        // l1,
+        // l2,
+        // area,
+        // city,
+        // pin,
+        // enroll
+      ) => {
+        document.getElementById('divMainForm').style.display = 'none';
+        document.getElementById('divEditForm').style.display = 'block';
+
+        console.log(
+          'all edit data',
+          id
+          // city
+          // fName,
+          // mName,
+          // lName,
+          // email,
+          // contact,
+          // dob,
+          // l1,
+          // l2,
+          // area,
+          // city,
+          // pin,
+          // enroll
+        );
+
+        console.log('Edit data', bs[id]);
+
+        let fname = (document.getElementById('fname1').value =
+          bs[id].firstName);
+        let mname = (document.getElementById('mname1').value =
+          bs[id].middleName);
+        let lname = (document.getElementById('lname1').value = bs[id].lastName);
+
+        let email = (document.getElementById('email1').value = bs[id].Email);
+        let mobile = (document.getElementById('mobile1').value =
+          bs[id].contact);
+        let Birth = (document.getElementById('date1').value = bs[id].DOB);
+
+        let l1 = (document.getElementById('l11').value = bs[id].Address.Line1);
+        let l2 = (document.getElementById('l21').value = bs[id].Address.Line2);
+        let area = (document.getElementById('area1').value =
+          bs[id].Address.Area);
+        let city = (document.getElementById('city1').value =
+          bs[id].Address.City);
+        let pin = (document.getElementById('code1').value = bs[id].Address.Pin);
+
+        let enrollNum = (document.getElementById('enroll1').value =
+          bs[id].Enrollment);
+      };
+
+      const handleClickEditForm = () => {
+        console.log('first');
+        let fname = document.getElementById('fname1').value;
+        // console.log('fname==', fname);
+        let mname = document.getElementById('mname1').value;
+        let lname = document.getElementById('lname1').value;
+
+        let email = document.getElementById('email1').value;
+        let mobile = document.getElementById('mobile1').value;
+        let Birth = document.getElementById('date1').value;
+
+        let l1 = document.getElementById('l11').value;
+        let l2 = document.getElementById('l21').value;
+        let area = document.getElementById('area1').value;
+        let city = document.getElementById('city1').value;
+        let pin = document.getElementById('code1').value;
+
+        let enrollNum = document.getElementById('enroll1').value;
+
+        let objIndex = bs.filter((obj) => obj.firstName == fname);
+        console.log('objIndex', objIndex[0].id);
+
+        let i = objIndex[0].id;
+        console.log('first', fname);
+
+        bs[i].firstName = fname;
+        bs[i].middleName = mname;
+        bs[i].lastName = lname;
+        bs[i].Email = email;
+        bs[i].contact = mobile;
+        bs[i].DOB = Birth;
+
+        bs[i].Address.Line1 = l1;
+        bs[i].Address.Line2 = l2;
+        bs[i].Address.Area = area;
+        bs[i].Address.City = city;
+        bs[i].Address.Pin = pin;
+
+        bs[i].Enrollment = enrollNum;
+
+        // if (fname == '') {
+        //   alert('Fill out First Name');
+        // } else if (mname == '') {
+        //   alert('Fill out Middle Name');
+        // } else if (lname == '') {
+        //   alert('Fill Last out  Name');
+        // } else if (email == '') {
+        //   alert('Enter Your Email');
+        // } else if (mobile == '') {
+        //   alert('Fill out Mobile Number');
+        // } else if (Birth == '') {
+        //   alert('Fill out Birth date');
+        // } else if (l1 == '') {
+        //   alert('Fill out Line1 of Address');
+        // } else if (l2 == '') {
+        //   alert('Fill out Line2 of Address');
+        // } else if (area == '') {
+        //   alert('Fill out Area');
+        // } else if (city == '') {
+        //   alert('Fill out City');
+        // } else if (pin == '') {
+        //   alert('Fill out Pin');
+        // } else if (enrollNum == '') {
+        //   alert('Fill the Enrollment Number');
+        // } else {
+        //   bs.push({
+        //     firstName: fname,
+        //     middleName: mname,
+        //     lastName: lname,
+        //     Email: email,
+        //     contact: mobile,
+        //     DOB: Birth,
+        //     Address: {
+        //       Line1: l1,
+        //       Line2: l2,
+        //       Area: area,
+        //       City: city,
+        //       Pin: pin,
+        //     },
+        //     Enrollment: enrollNum,
+        //   });
+        // }
+        document.getElementById('divMainForm').style.display = 'block';
+        document.getElementById('divEditForm').style.display = 'none';
+      };
+
+      const handleDelete = (id) => {
+        bs = bs.filter((item) => item.id !== id);
+        console.log('first', bs);
+      };
+
+      // const handleClickEditForm = () => {
+      //   let enrollNum = document.getElementById('enroll1').value;
+      //   console.log('enrollNum', enrollNum);
+      // };
+      //   var input1 = prompt('Enter anything you want');
+      //   var word = prompt('Enter the word you want to search');
+
+      //   let text = input1.indexOf(word);
+      //   //   console.log('new Array', bs.join(''));
+
+      //   let lastThreeCharacter = word.substr(word.length - 3);
+
+      //   document.getElementById('demo').innerHTML = 'Index of data is ' + text;
+      //   document.getElementById('demo').innerHTML = 'Index of data is ' + text;
+      //   document.getElementById('demo').innerHTML = 'Index of data is ' + text;
+      //   document.getElementById('demo1').innerHTML =
+      //     'Last 3 data is ' + lastThreeCharacter;
+    </script>
+  </body>
+</html>

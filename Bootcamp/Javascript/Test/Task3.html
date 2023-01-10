@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <!-- <p id="dem"></p> -->
+
+    <script>
+      var input1 = prompt('Enter Input 1');
+      var input2 = prompt('Enter Input 2');
+
+      if (input1 && input2) {
+        let sum = Number(input1) + Number(input2);
+        let sub = input1 - input2;
+        let multiply = input1 * input2;
+        let division = input1 / input2;
+        document.getElementById('demo').innerHTML =
+          'Addition of ' + ' ' + input1 + ' + ' + input2 + ' = ' + sum;
+
+        document.getElementById('demo1').innerHTML =
+          'Subtraction of ' + ' ' + input1 + ' - ' + input2 + ' = ' + sub;
+
+        document.getElementById('demo2').innerHTML =
+          'Multiplication of ' +
+          ' ' +
+          input1 +
+          ' x ' +
+          input2 +
+          ' = ' +
+          multiply;
+
+        document.getElementById('demo3').innerHTML =
+          'Division of ' + ' ' + input1 + ' / ' + input2 + ' = ' + division;
+      }
+    </script>
+  </body>
+</html>

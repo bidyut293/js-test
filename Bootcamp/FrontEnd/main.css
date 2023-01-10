@@ -1,0 +1,752 @@
+
+.divtopMain{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divtopRight {
+    padding: 17px;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+    padding: 19px;
+    font-size: 16px;
+}
+
+.anchorline {
+    display: none;
+}
+
+.btnApply {
+        padding: 10px;
+        border: 0px;
+            background-color: #717CFF;
+            color: white;
+            box-shadow: 1px 1px 2px 2px #717cff;
+            border-radius: 3px;
+            font-weight: 600;
+            cursor: pointer;
+}
+
+.divbody1 {
+    display: flex;
+}
+
+.divbody1Left {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.divbody1Right {
+    width: 50%;
+    height: 88vh;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.body1text {
+        padding-top: 105px;
+            font-size: 65px;
+            font-family: system-ui;
+            padding-left: 150px;
+}
+
+.body1p {
+        padding-left: 150px;
+            padding-right: 40px;
+            color: #7D7D7D;
+            margin-bottom: 40px;
+}
+
+.body1btnApply {
+    padding: 8px;
+    padding-left: 20px;
+        border: 0px;
+        margin-left: 150px;
+        background-color: #717CFF;
+        color: white;
+        box-shadow: 1px 1px 2px 2px #717cff;
+        border-radius: 3px;
+        /* font-weight: 600; */
+        cursor: pointer;
+        margin-bottom: 110px;
+}
+
+.arrowspan {
+    padding-left: 20px;
+    padding-right: 7px;
+    font-size: 16px;
+}
+
+.imagebody1 {
+    height: 95vh;
+}
+
+.imgbody2 {
+        width: 140px;
+            height: 45px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+}
+
+.imgbody2left1 {
+    width: 145px;
+        height: 45px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-left: 180px;
+}
+
+.imgbody2right1 {
+    width: 140px;
+    height: 45px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 180px;
+}
+
+.divbody2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F1F2FC;
+}
+
+
+
+/* Our services */
+
+.divServices {
+
+}
+
+.serviceContent {
+
+}
+
+.h3textservice {
+        display: flex;
+            justify-content: center;
+            font-family: system-ui;
+            font-weight: 500;
+            margin-top: 46px;
+}
+
+.pre1 {
+        margin: 10px;
+            display: flex;
+            justify-content: center;
+            font-family: system-ui;
+            font-weight: 300;
+            color: #7D7D7D;
+}
+
+/* Card Services */
+
+.serviceCarddiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 69px;
+    margin-bottom: 60px;
+}
+
+.cardservice {
+    width: 16%;
+    border-radius: 10px;
+    box-shadow: 6px 7px 24px #00000030;
+    cursor: pointer;
+}
+
+.cardservice:hover {
+    border: 2px solid #717CFF;
+}
+
+.imgcardservice {
+    width: 45px;
+    height: 45px;
+    padding: 21px;
+    
+}
+
+.h3cardtext {
+    margin: 0px;
+        padding-left: 21px;
+        font-family: system-ui;
+        font-weight: 300;
+        font-size: 16px;
+}
+
+.paracardtext {
+    padding-left: 21px;
+    padding-right: 12px;
+    font-size: 11px;
+    font-weight: 200;
+    font-family: system-ui;
+    line-height: 20px;
+    height: 63px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    color: #7D7D7D;
+}
+
+.btnlearn {
+    margin-left: 21px;
+    padding-left: 0px;
+    margin-bottom: 17px;
+    font-family: system-ui;
+    border: 0px;
+    background-color: white;
+    color: #717CFF;
+    cursor: pointer;
+}
+
+.learnmorearrow {
+    padding-left: 5px;
+}
+
+
+/* News */
+
+.divnews {
+background-color: #F1F2FC;
+}
+
+.newsContent {
+
+}
+
+
+.h3textcountries {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-top: 46px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.h2newstext {
+    padding-top: 58px;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+}
+
+.prenewstext {
+    margin: 10px;
+        display: flex;
+        justify-content: center;
+        font-family: system-ui;
+        font-weight: 300;
+        color: #7D7D7D;
+}
+
+.divcardnews {
+    display: flex;
+    justify-content: space-around;
+    padding: 105px;
+}
+
+.cardboxnews {
+    box-shadow: 0px 6px 42px #0000001A;
+    width: 278px;
+    border-radius: 7px;
+}
+
+.imgnews {
+    width: 278px;
+    height: 200px;
+}
+
+.divcalender {
+    display: flex;
+    flex-direction: row;
+}
+
+.calendericon {
+    padding-left: 21px;
+    font-weight: 300;
+    width: 13px;
+}
+
+.calendertext {
+    padding-left: 10px;
+    color: #565656;
+    font-size: 12px;
+    font-family: system-ui;
+}
+
+.h5textnews {
+    margin: 5px;
+    padding-left: 16px;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 14px;
+    color: #252525;
+}
+
+.paratextnews {
+    margin: 12px;
+    padding-left: 9px;
+    font-family: system-ui;
+    font-size: 11px;
+    font-weight: 200;
+    padding-bottom: 27px;
+}
+
+.divjoinbtn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.joinbtn {
+    box-shadow: 0px 3px 6px #717cff57;
+    background-color: #717CFF;
+    color: white;
+    width: 145px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: system-ui;
+    font-size: 12px;
+
+}
+
+
+/* countries part */
+
+.divCountries {
+    background-color: #FAFAFA;
+}
+
+.divcountriestext {
+
+}
+
+.divcountriescard {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+
+.divcardcountries {
+    width: min-content;
+}
+
+
+.imgcountries {
+    width: 300px;
+}
+
+.h5textcountries {
+    padding-top: 30px;
+    margin: 0px;
+    font-size: 19px;
+    font-family: system-ui;
+    font-weight: 400;
+    color: #37474F;
+}
+
+.paratextcountries {
+    color: #37474FB8;
+    font-size: 12px;
+}
+
+
+/* Testimonial */
+
+.divtestemonialmain {
+    
+}
+
+.divtestemonialtext {
+
+}
+
+.h3texttestimonial {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-top: 70px;
+    margin: 0px;
+    padding-bottom: 12px;
+}
+
+
+
+.divcardtestimonialmain {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.cardtestimonial {
+    box-shadow: 0px 0px 77px #0000000F;
+    width: 350px;
+    line-height: 20px;
+    height: 180px;
+}
+
+.divlogotextmain {
+    display: flex;
+    padding: 25px;
+}
+
+.logotestimonial {
+    width: 50px;
+    height: 50px;
+}
+
+.textlogo {
+    padding-left: 12px;
+    padding-top: 4px;
+}
+
+.logoname {
+    margin: 0px;
+    font-family: system-ui;
+    font-weight: 300;
+    padding-top: 2px;
+}
+
+.logostudent {
+    margin: 0px;
+    font-family: system-ui;
+    font-size: 11px;
+    font-weight: 200;
+    padding-top: 3px;
+}
+
+.paratestimonial {
+    margin: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #37474FB8;
+    font-family: system-ui;
+    font-size: 12px;
+    font-weight: 300;
+    height: 62px;
+    overflow: hidden;
+}
+
+
+/* Footer  */
+
+
+.divfootermain {
+    background-color: #717CFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerdivleft {
+    width: 50%;
+}
+
+.divfoot {
+    display: flex;
+    width: 100%;
+}
+
+.leftlogotext {
+    padding: 80px;
+    padding-bottom: 10px;
+}
+
+.imgfooter {
+    width: 140px;
+    padding-bottom: 7px;
+}
+
+.prefooter {
+    margin: 0px;
+    padding-top: 5px;
+    font-family: system-ui;
+    font-size: 12px;
+    color: #EEEEEE;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+}
+
+.logofooter {
+    padding-left: 80px;
+    padding-bottom: 80px;
+    padding-top: 15px;
+}
+
+.sociallogoi {
+    width: 22px;
+}
+
+.sociallogot {
+    width: 22px;
+    padding-left: 27px;
+}
+
+.sociallogofb {
+    width: 13px;
+    height: 21px;
+    padding-left: 27px;
+}
+
+.footerdivright {
+    width: 50%;
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+}
+
+.textleft {
+    display: flex;
+    flex-direction: column;
+}
+
+.textright {
+    display: flex;
+    flex-direction: column;
+}
+
+.atext {
+    color: #EEEEEE;
+    padding: 20px;
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.paratextfoot {
+    display: flex;
+    justify-content: center;
+    color: #EEEEEE;
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+/* Mobile Resposive  */
+
+@media only screen and (max-width: 900px) {
+
+    .divtopMain {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+    .anchor {
+        display: none;
+    }
+
+    .btnApply {
+        display: none;
+    }
+
+    .anchorline {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    font-size: 40px;
+    }
+    
+    .divtopRight {
+        padding: 0px;
+    }
+
+    .divbody1Left {
+        width: 70%;
+    }
+
+    .divbody1Right {
+        width: 45%;
+        height: 36vh;
+    }
+    .body1p {
+    padding-left: 15px;
+    padding-right: 40px;
+    color: #7D7D7D;
+    margin-bottom: 40px;
+    height: 65px;
+    line-height: 23px;
+    overflow: hidden;
+    font-family: system-ui;
+}
+
+    .body1text {
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+    font-family: system-ui;
+    line-height: 25px;
+}
+
+.body1btnApply {
+    padding-left: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-bottom: 75px;
+    padding-right: 25px;
+}
+
+.arrowspan {
+    display: none;
+}
+
+.imagebody1 {
+    height: 258px;
+    width: 300px;
+}
+
+.imgbody2 {
+    width: 80px;
+    height: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.divbody2 {
+    padding: 15px;
+}
+
+.imgbody2left1 {
+    width: 70px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.imgbody2 {
+    width: 70px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.imgbody2right1 {
+    width: 80px;
+    height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+}
+
+.h3textservice {
+    margin-top: 30px;
+}
+
+.pre1 {
+    overflow: hidden;
+    font-size: 15.67px;
+}
+
+.serviceCarddiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding: 10px;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.cardservice {
+    width: 100%;
+}
+
+.h2newstext {
+    padding-top: 40px;
+}
+
+.prenewstext {
+    overflow: hidden;
+}
+
+.divcardnews {
+    padding: 40px;
+    overflow: scroll;
+}
+
+.cardboxnews {
+    margin: 10px;
+}
+
+.divcountriescard {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.imgcountries {
+    width: 189px;
+}
+
+.h5textcountries {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.h3texttestimonial {
+    padding-top: 25px;
+}
+
+.divcardtestimonialmain {
+    padding: 20px;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.divfoot {
+    flex-direction: column;
+}
+
+.footerdivleft {
+    width: 100%;
+    display: flex;
+}
+
+.leftlogotext {
+    padding: 0px;
+    padding-left: 35px;
+    padding-top: 35px;
+}
+
+.logofooter {
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    transform: translate(-26px, 32px);
+}
+
+.sociallogofb {
+    padding-left: 10px;
+}
+
+.sociallogot {
+    padding-left: 10px;
+}
+
+.footerdivright {
+    width: 100%;
+    display: flex;
+    padding: 27px;
+    justify-content: space-between;
+    padding-right: 27px;
+}
+
+.textright {
+    margin-right: 45px;
+}
+
+}
